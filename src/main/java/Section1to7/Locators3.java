@@ -1,4 +1,4 @@
-package Examples;
+package Section1to7;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

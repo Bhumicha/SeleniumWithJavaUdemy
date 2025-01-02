@@ -1,4 +1,4 @@
-package Examples;
+package Section1to7;
 
 public class Strings {
 

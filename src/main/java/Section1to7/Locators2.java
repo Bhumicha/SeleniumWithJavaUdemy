@@ -1,4 +1,4 @@
-package Examples;
+package Section1to7;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
