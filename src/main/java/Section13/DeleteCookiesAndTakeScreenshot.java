@@ -1,4 +1,4 @@
-package Section13to;
+package Section13;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
