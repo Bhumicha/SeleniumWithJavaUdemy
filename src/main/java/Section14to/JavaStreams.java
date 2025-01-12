@@ -2,6 +2,8 @@ package Section14to;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class JavaStreams {
@@ -53,8 +55,13 @@ public class JavaStreams {
 
     public void streamMap()
     {
+        //print names in uppercase
         Stream.of("Bhumika","Don","Adam").filter(s->s.endsWith("m")).map(s->s.toUpperCase())
         .forEach(s->System.out.println(s));
+
+        List<String> names1=Arrays.asList("", "Bhumika","Don","Adam");
+        names1.stream().filter(s->s.startsWith("A")).sorted().map(s->s.toUpperCase()).forEach(s->System.out.println(s));
+
     }
 }
 
