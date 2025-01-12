@@ -1,13 +1,15 @@
 package Section14to;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class JavaStreams {
+    public static void main(String[] args) {
+        regular();
+        JavaStreams js = new JavaStreams();
+        js.streamFilter();
+    }
     public static void regular()
     {
 
@@ -27,16 +29,33 @@ public class JavaStreams {
         }
         System.out.println(count);
     }
-    @Test
-    public void StreamFilter()
+
+
+    public void streamFilter()
     {
         ArrayList<String> names=new ArrayList<>();
         names.add("Bhumika");
         names.add("Don");
         names.add("Adam");
         names.add("Diana");
-
         Long c=names.stream().filter(s->s.startsWith("D")).count();
         System.out.println(c);
+
+    long d=Stream.of("Bhumika","Don","Adam").filter(s->
+        {
+            s.startsWith("D");
+            return true;
+        }).count();
+        System.out.println(d);
+        names.stream().filter(s->s.length()>4).forEach(s->System.out.println(s));
+
+    }
+
+    public void streamMap()
+    {
+        Stream.of("Bhumika","Don","Adam").filter(s->s.endsWith("m")).map(s->s.toUpperCase())
+        .forEach(s->System.out.println(s));
     }
 }
+
+
