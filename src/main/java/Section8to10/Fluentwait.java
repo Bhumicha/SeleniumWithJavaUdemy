@@ -1,4 +1,4 @@
-package Section8to;
+package Section8to10;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
