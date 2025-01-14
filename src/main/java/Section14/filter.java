@@ -1,4 +1,4 @@
-package Section14to;
+package Section14;
 
 import java.util.List;
 import java.util.stream.Collectors;
