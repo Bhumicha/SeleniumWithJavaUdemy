@@ -36,7 +36,7 @@ public class HandlingWindowsBackandForth {
         nameEditBox.sendKeys(courseName);
         //screenshot
         File file=nameEditBox.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file, new File("logo.png"));
+        FileUtils.copyFile(file, new File("E:\\Intellij\\SeleniumWithJavaUdemy1\\Files\\logo.png"));
 
 
         //GEt Height & Width
