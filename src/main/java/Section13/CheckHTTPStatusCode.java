@@ -29,7 +29,7 @@ public class CheckHTTPStatusCode {
             System.out.println(resCode);
             Assert.assertTrue(resCode<400,"The links with text"+link.getText()+"is broken with code"+resCode);
             if (resCode > 400) {
-                System.out.println("The link with test" + link.getText()+"is broken with code"+resCode);
+                System.out.println("The link with Test.test" + link.getText()+"is broken with code"+resCode);
             }
         }
     }

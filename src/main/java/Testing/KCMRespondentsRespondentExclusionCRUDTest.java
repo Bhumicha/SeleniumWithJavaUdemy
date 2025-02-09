@@ -36,7 +36,7 @@
 //
 //    @Test
 //    public void kCMRespondentsRespondentExclusionCRUD() {
-//        ExtentTestManager.getTest().log(LogStatus.INFO, "kCMRespondentsRespondentExclusionCRUD test is starting now", "");
+//        ExtentTestManager.getTest().log(LogStatus.INFO, "kCMRespondentsRespondentExclusionCRUD Test.test is starting now", "");
 //        try {
 //            driver.get("https://d.kcmg.nl/login");
 //            driver.manage().window().maximize();
@@ -245,9 +245,9 @@
 //            driver.findElement(By.xpath("//span[contains(.,\'Ja\')]")).click();
 //            Thread.sleep(7000);
 //
-//            ExtentTestManager.getTest().log(LogStatus.PASS, "kCMRespondentsRespondentExclusionCRUD test is passed", "");
+//            ExtentTestManager.getTest().log(LogStatus.PASS, "kCMRespondentsRespondentExclusionCRUD Test.test is passed", "");
 //        } catch (Exception e) {
-//            ExtentTestManager.getTest().log(LogStatus.FAIL, "kCMRespondentsRespondentExclusionCRUD test is failed ", "" + e.getMessage());
+//            ExtentTestManager.getTest().log(LogStatus.FAIL, "kCMRespondentsRespondentExclusionCRUD Test.test is failed ", "" + e.getMessage());
 //        }
 //
 //
